@@ -16,12 +16,12 @@ html {
     color: #1E1E1E;
 }
 
-.background-video--music {
+.background-video {
     position: fixed;
     z-index: -5;
     bottom: 0;
     opacity: 0;
-    transition: 1000ms ease-in-out;;
+    transition: 500ms ease-in-out;;
 }
 
 .visible-bg {
@@ -103,13 +103,6 @@ input, textarea {
     background: url(/images/burger.svg);
     background-repeat: no-repeat;
     display: none;
-}
-
-.background-video--slider {
-    position: fixed;
-    z-index: -5;
-    bottom: 0;
-    opacity: 0.3;
 }
 
 button {
@@ -600,10 +593,7 @@ form > p{
         border-bottom: 1px solid #6AF812;
         transition: 150ms ease-in-out;
     }
-    .background-video--slider {
-        width: 100vw;
-    }
-    .background-video--music {
+    .background-video {
         width: 100vw;
     }
     li {

@@ -21,12 +21,15 @@ $(document).ready(function(){
   $("footer").addClass('visible');
     $(document).on("click", "a:not([href*='#']):not([href^='tel']):not([href^='mailto'])", function(e) {
         e.preventDefault();
-        $('.background-video--slider').get(0).play()
+        $('.background-video').addClass('visible-bg');
+        setTimeout(function () {
+          $('.background-video').removeClass('visible-bg');
+        }, 1000);
         $("main").removeClass('visible');
         $("footer").removeClass('visible');
         var self = this;
         setTimeout(function () {
-            window.location.href = $(self).attr("href");
+          window.location.href = $(self).attr("href");
         }, 1500);
     });
 });
