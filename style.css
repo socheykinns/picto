@@ -20,6 +20,9 @@ html {
     position: fixed;
     z-index: -5;
     bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     opacity: 0;
     transition: 500ms ease-in-out;;
 }
@@ -595,6 +598,7 @@ form > p{
     }
     .background-video {
         width: 100vw;
+        height: 50vh;
     }
     li {
         font-size: 32px;
