@@ -1,6 +1,4 @@
 var scroll = $(window).scrollTop()
-$("main").addClass('visible');
-$("footer").addClass('visible');
 
 $(window).scroll(function() {
   if ($(window).scrollTop() > scroll) {
@@ -31,4 +29,9 @@ $(document).ready(function(){
             window.location.href = $(self).attr("href");
         }, 1500);
     });
+});
+
+window.addEventListener('load', function() {
+  $("main").addClass('visible');
+  $("footer").addClass('visible');
 });
