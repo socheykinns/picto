@@ -1,4 +1,6 @@
 var scroll = $(window).scrollTop()
+$("main").addClass('visible');
+$("footer").addClass('visible');
 
 $(window).scroll(function() {
   if ($(window).scrollTop() > scroll) {
