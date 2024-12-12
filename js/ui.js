@@ -31,7 +31,7 @@ $(document).ready(function(){
     });
 });
 
-window.addEventListener('load', function() {
+$(window).on('popstate', function() {
   $("main").addClass('visible');
   $("footer").addClass('visible');
 });
