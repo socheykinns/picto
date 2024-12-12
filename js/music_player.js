@@ -40,9 +40,9 @@ $('audio').on('ended', function() {
 function share() {
     if (navigator.canShare) {
         navigator.share({
-            title: 'Послушай трек от лэйбла PICTO',
+            title: 'Послушай треки от лэйбла PICTO',
             text: 'Делюсь с тобой ссылкой',
-            url: 'https://socheykinns.github.io/',
+            url: 'https://socheykinns.github.io/discography.html',
         });
     } else {
         alert('К сожалению, ваш браузер не поддерживает возможность поделиться треком. Попробуйте отправить ссылку на сайт.')
